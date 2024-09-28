@@ -19,9 +19,9 @@ const tabData = [
 ];
 
 function App() {
-const activeTab = 2;
+const [activeTab,setActiveTab] =useState(1);
 const handleActiveTab= (id)=> {
-console.log({id});
+setActiveTab(id)
 }
 return (
   <div className="tab">
